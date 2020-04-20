@@ -1,0 +1,426 @@
+{
+    "name": "One Light",
+    // "globals": {
+    //     "background": "#fafafa",
+    //     "foreground": "#383A42",
+    //     "block_caret": "#528bff",
+    //     // "caret": "#528bff", // dark sublime
+    //     "caret": "#526fff", // light code
+    //     // "invisibles": "#494f4f", // dark sublime
+    //     "invisibles": "#383a4233", // light code
+    //     // "line_highlight": "#4c576730", // dark sublime
+    //     "line_highlight": "#383a420c", // light code
+    //     // "selection": "#3d4350", // dark sublime
+    //     "selection": "#e5e5e6", // light code
+    //     // "inactive_selection": "#e5e5e6", // light code
+    // },
+    "globals": {
+        "background": "#282C34",
+        "foreground": "#ABB2BF",
+        "caret": "#528BFF",
+        "invisibles": "#494f4f",
+        "line_highlight": "#4c576730",
+        "selection": "#3D4350",
+    },
+    "rules": [
+        // {
+        //     "name": "Comment",
+        //     "scope": "comment",
+        //     "foreground": "#a0a1a7",
+        // },
+        {
+            "name": "Text",
+            "scope": "variable.parameter.function",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "Comments",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "#5C6370",
+            "font_style": " italic"
+        },
+        {
+            "name": "Delimiters",
+            "scope": "none",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "Keywords",
+            "scope": "keyword",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "Variables",
+            "scope": "variable",
+            "foreground": "#E06C75"
+        },
+        {
+            "name": "Functions",
+            "scope": "entity.name.function, meta.require, support.function.any-method",
+            "foreground": "#61AFEF"
+        },
+        {
+            "name": "Classes",
+            "scope": "support.class, entity.name.class, entity.name.type.class",
+            "font_style": "italic",
+            "foreground": "#E5C07B"
+        },
+        {
+            "name": "Classes",
+            "scope": "meta.class",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "Methods",
+            "scope": "keyword.other.special-method",
+            "foreground": "#61AFEF"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "Support",
+            "scope": "support.function",
+            "foreground": "#56B6C2"
+        },
+        {
+            "name": "Strings, Inherited Class",
+            "scope": "string, constant.other.symbol, entity.other.inherited-class",
+            "foreground": "#98C379"
+        },
+        {
+            "name": "Integers",
+            "scope": "constant.numeric",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Floats",
+            "scope": "none",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Boolean",
+            "scope": "none",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Constants",
+            "scope": "constant",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Tags",
+            "scope": "entity.name.tag",
+            "foreground": "#E06C75"
+        },
+        {
+            "name": "Attributes",
+            "scope": "entity.other.attribute-name",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Attribute IDs",
+            "scope": "entity.other.attribute-name.id, punctuation.definition.entity",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Selector",
+            "scope": "meta.selector",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "Values",
+            "scope": "none",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Headings",
+            "scope": "markup.heading punctuation.definition.heading, entity.name.section",
+            "font_style": "",
+            "foreground": "#61AFEF"
+        },
+        {
+            "name": "Units",
+            "scope": "keyword.other.unit",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Bold",
+            "scope": "markup.bold, punctuation.definition.bold",
+            "foreground": "#E5C07B"
+        },
+        {
+            "name": "Italic",
+            "scope": "markup.italic, punctuation.definition.italic",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "Code",
+            "scope": "markup.raw.inline",
+            "foreground": "#98C379"
+        },
+        {
+            "name": "Link Text",
+            "scope": "string.other.link, punctuation.definition.string.end.markdown",
+            "foreground": "#E06C75"
+        },
+        {
+            "name": "Link Url",
+            "scope": "meta.link",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Lists",
+            "scope": "markup.list",
+            "foreground": "#E06C75"
+        },
+        {
+            "name": "Quotes",
+            "scope": "markup.quote",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "Separator",
+            "scope": "meta.separator",
+            "background": "#515151",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "Inserted",
+            "scope": "markup.inserted",
+            "foreground": "#98C379"
+        },
+        {
+            "name": "Deleted",
+            "scope": "markup.deleted",
+            "foreground": "#E06C75"
+        },
+        {
+            "name": "Changed",
+            "scope": "markup.changed",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "Colors",
+            "scope": "constant.other.color",
+            "foreground": "#56B6C2"
+        },
+        {
+            "name": "Regular Expressions",
+            "scope": "string.regexp",
+            "foreground": "#56B6C2"
+        },
+        {
+            "name": "Escape Characters",
+            "scope": "constant.character.escape",
+            "foreground": "#56B6C2"
+        },
+        {
+            "name": "Embedded",
+            "scope": "punctuation.section.embedded, variable.interpolation",
+            "foreground": "#BE5046"
+        },
+        {
+            "name": "Illegal",
+            "scope": "invalid.illegal",
+            "background": "#f2777a",
+            "foreground": "#FFFFFF"
+        },
+        {
+            "name": "Broken",
+            "scope": "invalid.broken",
+            "background": "#f99157",
+            "foreground": "#2d2d2d"
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "background": "#d27b53",
+            "foreground": "#272B33"
+        },
+        {
+            "name": "Unimplemented",
+            "scope": "invalid.unimplemented",
+            "background": "#747369",
+            "foreground": "#272B33"
+        },
+        {
+            "name": "Json key",
+            "scope": "source.json                           meta.structure.dictionary.json                              string.quoted.double.json",
+            "foreground": "#E06C75"
+        },
+        {
+            "name": "Json value",
+            "scope": "source.json                       meta.structure.dictionary.json                           meta.structure.dictionary.value.json                       string.quoted.double.json",
+            "foreground": "#98C379"
+        },
+        {
+            "name": "json sub key",
+            "scope": "source.json                           meta.structure.dictionary.json                          meta.structure.dictionary.value.json                        meta.structure.dictionary.json                      string.quoted.double.json",
+            "foreground": "#E06C75"
+        },
+        {
+            "name": "Json sub value",
+            "scope": "source.json                       meta.structure.dictionary.json                        meta.structure.dictionary.value.json                       meta.structure.dictionary.json                          meta.structure.dictionary.value.json                            string.quoted.double.json",
+            "foreground": "#98C379"
+        },
+        {
+            "name": "laravel blade tag",
+            "scope": "text.html.laravel-blade                        source.php.embedded.line.html                     entity.name.tag.laravel-blade",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "laravel blade @",
+            "scope": "text.html.laravel-blade                         source.php.embedded.line.html                    support.constant.laravel-blade",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "python function parameter",
+            "scope": "source.python meta.function.python meta.function.parameters.python variable.parameter.function.python",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "python meta function",
+            "scope": "source.python support.type.python",
+            "foreground": "#56B6C2"
+        },
+        {
+            "name": "python logical keyword",
+            "scope": "source.python keyword.operator.logical.python",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "python class ( begin",
+            "scope": "source.python meta.class.python punctuation.definition.inheritance.begin.python",
+            "foreground": "#E5C07B"
+        },
+        {
+            "name": "python class ) end",
+            "scope": "source.python meta.class.python punctuation.definition.inheritance.end.python",
+            "foreground": "#E5C07B"
+        },
+        {
+            "name": "python function call parameter name",
+            "scope": "source.python meta.function-call.arguments.python variable.parameter.function-call.python",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "php fcuntion constants",
+            "scope": "text.html.basic                   source.php.embedded.block.html                             support.constant.std.php",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "php namespace name",
+            "scope": "text.html.basic                              source.php.embedded.block.html                               meta.namespace.php                              entity.name.type.namespace.php",
+            "foreground": "#E5C07B"
+        },
+        {
+            "name": "javascript meta constant",
+            "scope": "source.js                              meta.function.js                       support.constant.js",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "php namespace in top",
+            "scope": "text.html.basic`                               source.php.embedded.block.html                        constant.other.php",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "php namespace name in top",
+            "scope": "text.html.basic                              source.php.embedded.block.html                               support.other.namespace.php",
+            "foreground": "#D19A66"
+        },
+        {
+            "name": "latex label names",
+            "scope": "text.tex.latex                               meta.function.environment.math.latex                               string.other.math.block.environment.latex                               meta.definition.label.latex                               variable.parameter.definition.label.latex",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "latex italic emph",
+            "scope": "text.tex.latex                           meta.function.emph.latex                              markup.italic.emph.latex",
+            "font_style": " italic",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "subl_new js vars",
+            "scope": "source.js                          variable.other.readwrite.js",
+            "foreground": "ABB2BF"
+        },
+        {
+            "name": "new_subl js $",
+            "scope": "source.js                         meta.function-call.with-arguments.js                        variable.function.js",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "new_subl js call method",
+            "scope": "source.js                            meta.group.braces.round                           meta.group.braces.curly                             meta.function-call.method.without-arguments.js                    variable.function.js",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "new_subl e js",
+            "scope": "source.js                            meta.group.braces.round                            meta.group.braces.curly                            variable.other.object.js",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "new_subl js key",
+            "scope": "source.js                             meta.group.braces.round                           meta.group.braces.curly                            constant.other.object.key.js                            string.unquoted.label.js",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "new_subl obejct key",
+            "scope": "source.js                       meta.group.braces.round                            meta.group.braces.curly                           constant.other.object.key.js                         punctuation.separator.key-value.js",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "new_subl js method with args",
+            "scope": "source.js                            meta.group.braces.round                           meta.group.braces.curly                           meta.function-call.method.with-arguments.js                 variable.function.js",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "new_subl js variable function",
+            "scope": "source.js                            meta.function-call.method.with-arguments.js                        variable.function.js",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "new_subl variabel function method",
+            "scope": "source.js                       meta.function-call.method.without-arguments.js                       variable.function.js",
+            "foreground": "#ABB2BF"
+        },
+        {
+            "name": "Modules",
+            "scope": "keyword.operator.module.js, keyword.operator.new.js",
+            "foreground": "#C678DD"
+        },
+        {
+            "name": "GitGutter deleted",
+            "scope": "markup.deleted.git_gutter",
+            "foreground": "#F92672"
+        },
+        {
+            "name": "GitGutter inserted",
+            "scope": "markup.inserted.git_gutter",
+            "foreground": "#A6E22E"
+        },
+        {
+            "name": "GitGutter changed",
+            "scope": "markup.changed.git_gutter",
+            "foreground": "#967EFB"
+        },
+        {
+            "name": "GitGutter ignored",
+            "scope": "markup.ignored.git_gutter",
+            "foreground": "#565656"
+        },
+        {
+            "name": "GitGutter untracked",
+            "scope": "markup.untracked.git_gutter",
+            "foreground": "#565656"
+        }
+    ]
+}

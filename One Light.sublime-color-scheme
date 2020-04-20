@@ -1,0 +1,399 @@
+{
+    "name": "One Light",
+    "variables": {
+        "dark-gray-1": "#383a42",
+        "light-gray-1": "#a0a1a7",
+        "light-gray-2": "#c0c1c7",
+        "dark-green-1": "#50a14f",
+        "dark-purple-1": "#a626a4",
+        "dark-red-1": "#ca1243",
+        "light-red-1": "#e45649",
+        "red-illegal": "#ff1413",
+        "dark-blue-1": "#4078f2",
+        "dark-blue-2": "#0184bc",
+        "dark-yellow-1": "#c18401",
+        "dark-yellow-2": "#986801",
+        "yellow-illegal": "#f2a60d",
+        "off-white-1": "#fafafa",
+        "black": "#000000",
+        "git-deleted": "#f92672",
+        "git-inserted": "#a6e22e",
+        "git-changed": "#967efb",
+        "git-ignored": "#565656"
+    },
+    "globals": {
+        "background": "var(off-white-1)",
+        "foreground": "var(dark-gray-1)",
+        "block_caret": "#528BFF", // ?
+        "caret": "#526fff",
+        "invisibles": "#383a4230",
+        "invisibles_selected": "#383a42",
+        "line_highlight": "#383a420c",
+        "selection": "#e5e5e6",
+        "selection_border_width": "0",
+    },
+    // "globals": {
+        // dark sublime
+        // "background": "#282C34",
+        // "foreground": "var(dark-gray-1)",
+        // "caret": "#528BFF",
+        // "invisibles": "#494f4f",
+        // "line_highlight": "#4c576730",
+        // "selection": "#3D4350",
+    // },
+    "rules": [
+        {
+            "name": "Comment",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "var(light-gray-1)",
+            "font_style": "italic"
+        },
+        {
+            // "name": "Comment",
+            "scope": "highlight.invisible",
+            "foreground": "var(dark-blue-1)"
+        },
+        {
+            "name": "Text",
+            "scope": "variable.parameter.function",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "Delimiter",
+            "scope": "none",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "Operator",
+            "scope": "keyword.operator",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(dark-purple-1)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "var(light-red-1)"
+        },
+        {
+            "name": "Function",
+            "scope": "entity.name.function, meta.require, support.function.any-method",
+            "foreground": "var(dark-blue-1)"
+        },
+        {
+            "name": "Class",
+            "scope": "support.class, entity.name.class, entity.name.type.class",
+            "font_style": "italic",
+            "foreground": "var(dark-yellow-1)"
+        },
+        {
+            "name": "Class",
+            "scope": "meta.class",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "Method",
+            "scope": "keyword.other.special-method",
+            "foreground": "var(dark-blue-1)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(dark-purple-1)"
+        },
+        {
+            "name": "Function",
+            "scope": "support.function",
+            "foreground": "var(dark-blue-2)"
+        },
+        {
+            "name": "String, Inherited Class",
+            "scope": "string, constant.other.symbol, entity.other.inherited-class",
+            "foreground": "var(dark-green-1)"
+        },
+        {
+            "name": "Integer",
+            "scope": "constant.numeric",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "Float",
+            "scope": "none",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "Boolean",
+            "scope": "none",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "Constant",
+            "scope": "constant",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "Tag",
+            "scope": "entity.name.tag",
+            "foreground": "var(light-red-1)"
+        },
+        {
+            "name": "Attribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "Attribute ID",
+            "scope": "entity.other.attribute-name.id, punctuation.definition.entity",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "Selector",
+            "scope": "meta.selector",
+            "foreground": "var(dark-purple-1)"
+        },
+        {
+            "name": "Value",
+            "scope": "none",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "Heading",
+            "scope": "markup.heading punctuation.definition.heading, entity.name.section",
+            "foreground": "var(dark-blue-1)"
+        },
+        {
+            "name": "Unit",
+            "scope": "keyword.other.unit",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "Bold",
+            "scope": "markup.bold, punctuation.definition.bold",
+            "font_style": "bold",
+            "foreground": "var(dark-yellow-1)"
+        },
+        {
+            "name": "Italic",
+            "scope": "markup.italic, punctuation.definition.italic",
+            "font_style": "italic",
+            "foreground": "var(dark-purple-1)"
+        },
+        {
+            "name": "Code",
+            "scope": "markup.raw.inline",
+            "foreground": "var(dark-green-1)"
+        },
+        {
+            "name": "Link Text",
+            "scope": "string.other.link, punctuation.definition.string.end.markdown",
+            "foreground": "var(light-red-1)"
+        },
+        {
+            "name": "Link Url",
+            "scope": "meta.link",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "List",
+            "scope": "markup.list",
+            "foreground": "var(light-red-1)"
+        },
+        {
+            "name": "Quote",
+            "scope": "markup.quote",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "Separator",
+            "scope": "meta.separator",
+            "background": "var(light-gray-2)",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "Inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(dark-green-1)"
+        },
+        {
+            "name": "Deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(light-red-1)"
+        },
+        {
+            "name": "Changed",
+            "scope": "markup.changed",
+            "foreground": "var(dark-purple-1)"
+        },
+        {
+            "name": "Color",
+            "scope": "constant.other.color",
+            "foreground": "var(dark-blue-2)"
+        },
+        {
+            "name": "Regular Expression",
+            "scope": "string.regexp",
+            "foreground": "var(dark-blue-2)"
+        },
+        {
+            "name": "Escape Character",
+            "scope": "constant.character.escape",
+            "foreground": "var(dark-blue-2)"
+        },
+        {
+            "name": "Punctuation Section Embedded",
+            "scope": "punctuation.section.embedded",
+            "foreground": "var(dark-red-1)"
+        },
+        {
+            "name": "Variable Interpolation",
+            "scope": "variable.interpolation",
+            "foreground": "var(dark-red-1)"
+        },
+        {
+            "name": "Illegal",
+            "scope": "invalid.illegal",
+            "background": "var(red-illegal)",
+            "foreground": "var(off-white-1)"
+        },
+        {
+            "name": "Broken",
+            "scope": "invalid.broken",
+            "background": "#f99157",
+            "foreground": "#2d2d2d"
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "background": "var(yellow-illegal)",
+            "foreground": "var(black)"
+        },
+        {
+            "name": "Unimplemented",
+            "scope": "invalid.unimplemented",
+            "background": "#747369",
+            "foreground": "var(black)"
+        },
+        {
+            "name": "JSON Key",
+            "scope": "meta.mapping.key.json string.quoted.double.json",
+            "foreground": "var(light-red-1)"
+        },
+        {
+            "name": "JSON Value",
+            "scope": "meta.mapping.value.json string.quoted.double.json",
+            "foreground": "var(dark-green-1)"
+        },
+
+        // Blade
+        {
+            "name": "laravel blade tag",
+            "scope": "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
+            "foreground": "var(dark-purple-1)"
+        },
+        {
+            "name": "laravel blade @",
+            "scope": "text.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
+            "foreground": "var(dark-purple-1)"
+        },
+
+        // Python
+        {
+            "name": "python function parameter",
+            "scope": "source.python meta.function.python meta.function.parameters.python variable.parameter.function.python",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "python meta function",
+            "scope": "source.python support.type.python",
+            "foreground": "var(dark-blue-2)"
+        },
+        {
+            "name": "python logical keyword",
+            "scope": "source.python keyword.operator.logical.python",
+            "foreground": "var(dark-purple-1)"
+        },
+        {
+            "name": "python class ( begin",
+            "scope": "source.python meta.class.python punctuation.definition.inheritance.begin.python",
+            "foreground": "var(dark-yellow-1)"
+        },
+        {
+            "name": "python class ) end",
+            "scope": "source.python meta.class.python punctuation.definition.inheritance.end.python",
+            "foreground": "var(dark-yellow-1)"
+        },
+        {
+            "name": "python function call parameter name",
+            "scope": "source.python meta.function-call.arguments.python variable.parameter.function-call.python",
+            "foreground": "var(dark-yellow-2)"
+        },
+
+        // PHP?
+        {
+            "name": "Namespace",
+            "scope": "meta.namespace entity.name.namespace",
+            "foreground": "var(dark-gray-1)"
+        },
+
+        // Javascript
+        {
+            "name": "JS Meta Constant",
+            "scope": "source.js meta.function.js support.constant.js",
+            "foreground": "var(dark-yellow-2)"
+        },
+        {
+            "name": "subl_new js vars",
+            "scope": "source.js variable.other.readwrite.js",
+            "foreground": "383A42"
+        },
+        {
+            "name": "new_subl js $",
+            "scope": "source.js meta.function-call.with-arguments.js variable.function.js",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "new_subl js call method",
+            "scope": "source.js meta.group.braces.round meta.group.braces.curly meta.function-call.method.without-arguments.js variable.function.js",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "new_subl e js",
+            "scope": "source.js meta.group.braces.round meta.group.braces.curly variable.other.object.js",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "new_subl js key",
+            "scope": "source.js meta.group.braces.round meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "new_subl obejct key",
+            "scope": "source.js meta.group.braces.round meta.group.braces.curly constant.other.object.key.js punctuation.separator.key-value.js",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "new_subl js method with args",
+            "scope": "source.js meta.group.braces.round meta.group.braces.curly meta.function-call.method.with-arguments.js variable.function.js",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "new_subl js variable function",
+            "scope": "source.js meta.function-call.method.with-arguments.js variable.function.js",
+            "foreground": "var(dark-gray-1)"
+        },
+        {
+            "name": "new_subl variabel function method",
+            "scope": "source.js meta.function-call.method.without-arguments.js variable.function.js",
+            "foreground": "var(dark-gray-1)"
+        },
+
+        {
+            "name": "Module",
+            "scope": "keyword.operator.module.js, keyword.operator.new.js",
+            "foreground": "var(dark-purple-1)"
+        }
+    ]
+}
